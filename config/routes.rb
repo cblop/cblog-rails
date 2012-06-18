@@ -1,4 +1,13 @@
 Cblog::Application.routes.draw do
+  get "article_list/home"
+
+  get "article_list/tags"
+
+  get "article_list/single"
+
+  root to: 'article_list#home'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
